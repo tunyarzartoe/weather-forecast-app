@@ -1,0 +1,14 @@
+h1 {
+    font-size:16px;
+    text-align:center;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border-bottom: 1px solid black;
+    vertical-align: top;
+}
+th {
+    width:15vh;
+}
