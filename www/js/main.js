@@ -5,7 +5,6 @@ let url = `https://www.jma.go.jp/bosai/forecast/data/overview_forecast/${targetA
 
 // 気象庁のWebAPIを利用して天気予報情報を取得
 fetch(url)  // urlにAjaxでリクエストを送信
-
     // Ajax通信に成功した場合
     .then(response => {
         // レスポンスをJSONとして解釈し，オブジェクトに変換
@@ -24,7 +23,6 @@ fetch(url)  // urlにAjaxでリクエストを送信
         document.getElementById('headlineText').lastElementChild.textContent = weather.headlineText;
         document.getElementById('text').lastElementChild.innerHTML = weather.text.replace(/\n\n/g, '<br>');  // 全ての'\n\n'を<br>に置換し，HTMLとして埋め込み
     })
-    
     // Ajax通信に失敗した場合
     .catch(error => {
         console.log('Ajax通信に失敗しました', error);
