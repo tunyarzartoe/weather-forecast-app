@@ -2,7 +2,6 @@
 
 const targetAreaNo = '130000';  // 対象地域の番号（130000は東京都）
 let url = `https://www.jma.go.jp/bosai/forecast/data/overview_forecast/${targetAreaNo}.json`;  // 天気予報情報をJSON形式で提供している気象庁のURL
-
 // 気象庁のWebAPIを利用して天気予報情報を取得
 fetch(url)  // urlにAjaxでリクエストを送信
     // Ajax通信に成功した場合
